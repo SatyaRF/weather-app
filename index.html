@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Finder</title>
+</head>
+<body>
+    <!-- <i class="material-icons left snow">ac_unit</i> -->
+    <div class="container">
+        <h1 class="center-align main-heading">WEATHER FINDER</h1>
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <input placeholder="Your City" id="city_name" type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <input id="country_name" type="text" class="validate" placeholder="Your Country">
+            </div>
+            <div class="input-field col s4">
+                <button class="btn waves-effect waves-light getweather" type="submit" name="submit">Get Weather
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input disabled id="location" type="text" placeholder="Location">
+              <!-- <label class="active" for="location">Location</label> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input disabled id="temperature" placeholder="Temparature">
+              <!-- <label for="temperature">Temparature</label> -->
+            </div>
+          </div>
+          <div class="row">
+                <div class="input-field col s6">
+                  <input disabled id="humidity" placeholder="Humidity">
+                  <!-- <label for="humidity">Humidity</label> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input disabled id="description" placeholder="Description">
+                    <!-- <label for="description">Description</label> -->
+                </div>
+            </div>
+          
+          
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

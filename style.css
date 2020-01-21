@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(to right, #e09731, #eaf589);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:  black;
+ }
+
+#location, #temperature, #humidity, #description {
+    color: brown;
+}
+
+/* .snow{
+    color: #fff;
+	position: absolute;
+	top: -20px;
+	animation: fall linear forwards;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+} */
+
+
