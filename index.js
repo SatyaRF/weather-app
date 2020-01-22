@@ -14,10 +14,12 @@ async function fetchWeather(city, country){
 
 function displayWeather({weather, main, sys, name}) {
     const tempval = 273.15;
+    const calcTemp = `${main.temp - tempval}`;
+    const calcTempUptoTwo = Math.floor(calcTemp);
     location.value = `${name}, ${sys.country}`;
     desc.value = weather[0].description.toUpperCase();
     humidity.value = `${main.humidity}%`;
-    temp.value = `${main.temp - tempval}°C`;
+    temp.value = `${calcTempUptoTwo}°C`;
     //console.log(weather, main, sys, name);
 }
 
